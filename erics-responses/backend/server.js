@@ -14,9 +14,13 @@ connection.once('open', () => {
   console.log("MongoDB Connected Successfully!");
 })
     
+const responsesRouter = require('./route/responses');
+const userRouter = require('./route/user');
 
-app.use(cors());
-app.use(express.json());
+app.use('/responses', responsesRouter);
+app.use('/user', userRouter);
+
+
 
 
 app.listen(port, () => {
