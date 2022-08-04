@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-const responSchema = new Schema({
+const userSchema = new Schema({
     question:{
         type: String,
         required: true,
@@ -10,4 +10,8 @@ const responSchema = new Schema({
     },
 }, {
     timestamps: true,
-})
+});
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;

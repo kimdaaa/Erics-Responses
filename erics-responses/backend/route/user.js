@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let User = require('/Users/hezon/Documents/GitHub/html-project/erics-responses/backend/models/user.model');
+let Responses = require('/Users/hezon/Documents/GitHub/html-project/erics-responses/backend/models/user.model');
 
 router.route('/').get((req, res)=>{
     User.find()

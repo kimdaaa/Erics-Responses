@@ -11,5 +11,4 @@ const responsesSchema = new Schema({
     timestamps:true,
 })
 const Question = mongoose.model('Responses', responsesSchema);
-module.exports = Responses;
-//https://www.youtube.com/watch?v=7CqJlxBYj-M 24:32
+module.exports = Response;
