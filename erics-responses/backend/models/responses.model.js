@@ -6,9 +6,9 @@ const responsesSchema = new Schema({
     question: {type: String, required: true},
     response: { type: Boolean, required: true},
     multiple: { type: Number, required: false},
-    date: { type:Date, required:true}
+    date: { type:Date, required:false}
 }, {
     timestamps:true,
 })
-const Question = mongoose.model('Responses', responsesSchema);
+const Responses = mongoose.model('Responses', responsesSchema);
 module.exports = Response;
